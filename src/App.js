@@ -14,27 +14,27 @@ class App extends React.Component{
       players: [
           {
               name: 'Enkhtuvshin',
-              score: 1,
+              score: 0,
               id: 1
           },
           {
               name: 'Dulam',
-              score: 1,
+              score: 0,
               id: 2
           },
           {
               name: 'Jambal',
-              score: 1,
+              score: 0,
               id: 3
           },
           {
               name: 'Jambal1',
-              score: 1,
+              score: 0,
               id: 4
           },
           {
               name: 'Jambal2',
-              score: 1,
+              score: 0,
               id: 5
           }
       ],
