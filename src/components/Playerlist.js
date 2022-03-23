@@ -8,6 +8,7 @@ function Playerlist(props) {
             {context=>{
                 const players = context.players;
 
+                console.log(players);
                 return(
                     <>
 

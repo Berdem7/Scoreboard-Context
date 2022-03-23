@@ -34,6 +34,14 @@ form {
   background-color: #8063FA;
 }
 
+form [disabled]{
+  background-color: #83D97C;
+}
+
+input[type='text'][disabled], .lte9 textarea[disabled] {
+	background-color: white;
+}
+
 input[type=text] {
   flex-grow: 1;
   border-width: 0 0 1px 0;

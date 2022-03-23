@@ -8,10 +8,10 @@ const AddPlayer = ()=>  {
     return(
         <Consumer>
                 {context=>{
-                    console.log(inputValue)
+                    // console.log(inputValue)
                     const handleSubmit = (e) =>{
                         e.preventDefault()
-                        context.addPlayer(inputValue.current.value)
+                        context.actions.addPlayer(inputValue.current.value)
                         e.currentTarget.reset()
                     }
                     

@@ -1,9 +1,10 @@
 import React from 'react'
 import propTypes from 'prop-types'
+import {Consumer} from './Context'
 
-class Counter extends React.Component {
+const Counter =({index})=> {
 
-    maxFinder(){
+  function maxFinder(){
         const arr = this.state.players.map((e)=>{return e.score});
       //    arr = props.score
       //   console.log(arr)
@@ -26,16 +27,26 @@ class Counter extends React.Component {
     }
 
 
-    render (){
 
         return(
             <div className='counter'>
-                    <button className="counter-action dicrement" onClick={()=>this.props.changeScore(-1, this.props.index)}>-</button>
-                    <span className='counter-score'>{ this.props.score }</span>
-                    <button className="counter-action increment" onClick={()=>this.props.changeScore(1, this.props.index)}> + </button>
+                <Consumer>
+                    {(value)=>{
+                        const players=value.players;
+                        const changeScore = value.actions.changeScore;
+                        return(
+                            <>
+                            <button className="counter-action dicrement" onClick={()=>changeScore(-1, index)}>-</button>
+                            <span className='counter-score'>{ players[index].score }</span>
+                            <button className="counter-action increment" onClick={()=>changeScore(1, index)}> + </button>
+                            </>
+
+                        )
+                    }}
+
+                </Consumer>
                 </div>
         )
-    }
 
 }
 
