@@ -43,7 +43,7 @@ export class Provider extends React.Component{
          this.max = Math.max(...arr);
          this.arrMax1.splice(0,this.arrMax1.length)
         for (let i=0; i<arr.length;i++){
-            if(arr[i]==this.max){
+            if(arr[i]===this.max){
                 this.arrMax1.push(i)
               }
           }
@@ -75,7 +75,7 @@ export class Provider extends React.Component{
   removePlayer = (paraID) => {
       this.setState( prevState => {
           return {
-              players: prevState.players.filter(p => p.id != paraID)
+              players: prevState.players.filter(p => p.id !== paraID)
           }
       })
   }
@@ -140,8 +140,6 @@ export class Provider extends React.Component{
         )
     }
   }
-  {/* <Player arr={this.arrMax} /> */}
 
-// export const Provider = ScoreboardContext.Provider;
 export const Consumer = ScoreboardContext.Consumer;
 

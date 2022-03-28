@@ -1,7 +1,6 @@
 import React from 'react'
 import Stats from './Stats'
 import Stopwatch from './Stopwatch'
-import propTypes from 'prop-types'
 
 const Header = (props)=>{
     return(

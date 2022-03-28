@@ -1,6 +1,5 @@
-import React, { createRef } from 'react'
+import React from 'react'
 import Counter from './Counter'
-import propTypes from 'prop-types'
 import Crown from './Crown'
 import { Consumer} from './Context'
 
@@ -33,7 +32,7 @@ class Player extends React.Component {
         const max = Math.max(...arr);
         let arrMax1 = [];
         for (let i=0; i<arr.length;i++){
-            if(arr[i]==max){
+            if(arr[i]===max){
                 arrMax1.push(i)
               }
           }
