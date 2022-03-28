@@ -79,9 +79,9 @@ class Player extends React.Component {
                     <>
                     <div  className="player-name">
                      <form onSubmit={handleSubmit}>
+                    <Crown number={this.props.max ? "is-high-score" : null} />
                         <button onClick={() => context.actions.removePlayer(context.players.id)} className="remove-player">✖</button>
                     
-                    <Crown number={this.props.max ? "is-high-score" : null} />
                     <span onClick={this.handleDisabled}>
                       <input  type="text" placeholder={context.players[this.state.index].name} disabled={(this.state.disabled)? "disabled" : ""} onBlur={e=>e.target.disabled=true} ref={this.inputValue}>
                       </input>  

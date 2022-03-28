@@ -31,7 +31,8 @@ header h1 {
 
 form {
   display: flex;
-  background-color: #8063FA;
+  /* background-color: ; */
+  align-items: center;
 }
 
 form [disabled]{
@@ -48,17 +49,17 @@ input[type=text] {
   margin: 15px 10px 15px 15px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #5B45B9;
+  background-color: #b4a8e7;
   border-style: none;
   text-shadow: none;
   text-transform: uppercase;
-  color: #C7BCF8;
+  color: #dbd8e7;
   letter-spacing: 2px;
   outline: none;
 }
 
 input[type=text]::-webkit-input-placeholder{
-  color: #C7BCF8;
+  color: #4524da;
   letter-spacing: 2px;
 }
 
