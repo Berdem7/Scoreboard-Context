@@ -7,27 +7,27 @@ export class Provider extends React.Component{
     state = {
         players: [
             {
-                name: 'Enkhtuvshin',
+                name: 'Byamba-Erdene',
                 score: 0,
                 id: 1
             },
             {
-                name: 'Dulam',
+                name: 'Erdem',
                 score: 0,
                 id: 2
             },
             {
-                name: 'Jambal',
+                name: 'Tugsbayar',
                 score: 0,
                 id: 3
             },
             {
-                name: 'Jambal1',
+                name: 'Bilegnom',
                 score: 0,
                 id: 4
             },
             {
-                name: 'Jambal2',
+                name: 'Munkh-Erdene',
                 score: 0,
                 id: 5
             }
